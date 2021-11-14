@@ -1,0 +1,49 @@
+package com.company;
+
+public class TestBall package com.company;
+
+public class Book
+{
+    public String name;
+    public int page;
+    public String genre;
+
+    public Book(String n, int p)
+    {
+        name = n;
+        page = p;
+    }
+    public Book(String n)
+    {
+        name = n;
+        page = 378;
+    }
+    public Book()
+    {
+        name = "Book1";
+        page = 700;
+    }
+    public void setPage (int page) {
+        this.page = page;
+    }
+
+    public void setName (String name) {
+        this.name = name;
+    }
+
+    public void setGenre (String genre) {this.genre = genre; }
+
+    public String getName (String name) {
+        return name;
+    }
+
+    public int getPage () {return page;}
+
+    public String toString () {
+        return  this.name + ", Name " + this.page;
+    }
+
+    public void intoBookPage () {
+        System.out.println ("The " + name + " book has " + page + " pages. " + "Genre is " + genre);
+    }
+}

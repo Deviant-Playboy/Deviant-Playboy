@@ -1,0 +1,46 @@
+package com.company;
+
+
+public class Ball {
+    public String title;
+    public int size;
+    public String color;
+
+    public Ball(String t, int s) {
+        title = t;
+        size = s;
+    }
+    public Ball(String t){
+        title = t;
+        size = 25;
+    }
+    public Ball(){
+        title = "ball";
+        size = 15;
+    }
+    public void setSize (int size) {
+        this.size = size;
+    }
+
+    public void setTitle (String Title) {
+        this.title = title;
+    }
+
+    public void setColor (String color) {this.color = color; }
+
+    public String getTitle (String Title) {
+        return Title;
+    }
+
+    public int getSize () {
+        return size;
+    }
+
+    public String toString () {
+        return  this.title + ", Title " + this.size;
+    }
+
+    public void intoBallSize () {
+        System.out.println(title + "'s size is "+size + " centimeters. " + "Color is "+ color);
+    }
+}
